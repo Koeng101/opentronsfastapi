@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='opentronsfastapi',
-    version='0.0.1',
+    version='0.1.0',
     url='https://github.com/Koeng101/opentronsfastapi',
     author='Keoni Gandall, Tim Dobbs',
     author_email='keoni@sporenetlabs.com, timdobbs@gmail.com',
