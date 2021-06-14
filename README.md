@@ -68,5 +68,14 @@ opentronsfastapi:
 - Simple git deployment onto robots
 - Hash returns of any individual protocol
 
+## Install with systemd
+```bash
+export IP=xxx.xxx.x.xxx
+ssh root@$IP 'mount -o remount,rw /'
+scp opentronsfastapi.service root@$IP:/etc/systemd/system
+ssh root@$IP 'systemctl enable opentronsfastapi'
+ssh root@$IP 'reboot'
+```
+
 # Contributors
 - Thank you Tim Dobbs for writing most of the README, adding essential wrappers, and generally bringing this project into reality.

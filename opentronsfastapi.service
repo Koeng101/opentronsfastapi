@@ -1,0 +1,13 @@
+[Unit]
+Description= opentronsfastapi
+after=nginx.service
+
+[Service]
+User=root
+WorkingDirectory=/data/user_storage/
+ExecStart=uvicorn app:app --reload --host 0.0.0.0
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
